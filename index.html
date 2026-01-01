@@ -4,108 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet" href="resume.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            width:100%;
+        }
+
+        /* ===== Header ===== */
+        .a1{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:center;
+            background:#2c3e50;
+            padding:30px 20px;
+        }
+
+        .a2 img{
+            max-width:50%;
+            height:auto;
+            border-radius:10px;
+        }
+
+        .header-text{
+            color:white;
+            text-align:center; 
+            margin-right:300px;
+        }
+
+        .header-text h1{
+            font-size:70px;
+        }
+
+        .header-text h3{
+            font-size:24px;
+            letter-spacing:2px;
+        }
+
+        /* ===== Main Section ===== */
+        .a3{
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .a4,.a5{
+            width:50%;
+            padding:30px;
+        }
+
+        /* .a4{
+            /* background:#ecf0f1; */
+        
+
+        /* ===== Titles ===== */
+        h1{
+            margin-bottom:10px;
+        }
+
+        /* ===== Lists ===== */
+        .item{
+            display:flex;
+            align-items:center;
+            margin-bottom:10px;
+        }
+
+        .item img{
+            width:40px;
+            height:40px;
+            margin-right:10px;
+        }
+
+        /* ===== Projects ===== */
+        .a6{
+            padding:30px;
+        }
+
+        .projects{
+            display:flex;
+            flex-wrap:wrap;
+        }
+
+        .a7,.a8{
+            width:50%;
+            padding:15px;
+        }
+
+        a{
+            color:#2980b9;
+            text-decoration:none;
+        }
+
+        a:hover{
+            text-decoration:underline;
+        }
+
+        /* ===== Responsive ===== */
+        @media(max-width:768px){
+            .header-text h1{
+                font-size:40px;
+            }
+
+            .a4,.a5,
+            .a7,.a8{
+                width:100%;
+            }
+
+            .header-text{
+                margin-left:0;
+                margin-top:20px;
+            }
+        }
+
+        @media(max-width:480px){
+            .header-text h1{
+                font-size:32px;
+            }
+
+            p{
+                font-size:14px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <!-- ===== Header ===== -->
     <div class="a1">
         <div class="a2">
-            <img src="Picture1.png" style="height: 300px; " alt="">
+            <img src="Picture1.png" alt="">
         </div>
-        <div style=" height: 200px; float: left; width: 50%; margin-left: 50px; color: white;">
-            <h1 style="text-align: center; margin-top: 30px; font-size: 80px;">Aakash <br>Tyagi </h1>
-            <h3 style="text-align: center; font-size: 25px;">WEB DEVELOPER</h3>
-            <p style="text-align: center;">
+        <div class="header-text">
+            <h1>Aakash<br>Tyagi</h1>
+            <h3>WEB DEVELOPER</h3>
         </div>
     </div>
+
+    <!-- ===== Info Section ===== -->
     <div class="a3">
+
         <div class="a4">
-            <h1 style="margin-left: 100px; padding-top: 20px;">Contact</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;" alt="">
-            <p style="margin-left: 100px;">Phone: +91 8439310853</p>
-            <p style="margin-left: 100px;">Email: akashtyagi3003@gamil.com</p>
-            <p style="margin-left: 100px;">Address: Muzaffernager</p>
-            <br>
-            <h1 style="margin-left: 100px; padding-top: 20px;">Skills</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;" alt="">
-            <br>
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 90px; float: left;"  alt="">
-            <p style="float: left;">HTML</p>
-            
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 0px; float: left; "  alt="">
-            <p style="float: left;">CSS</p>
-            
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 0px; float: left;"  alt="">
-            <p style="float: left;">My SQL</p>
-            
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 0px; float: left;"  alt="">
-            <p style="float: left;">Python</p>
-            <br>
-            <h1 style="margin-left: 100px; padding-top: 20px;">Languages</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;" alt="">
-            <br>
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 90px; float: left;"  alt="">
+            <h1>Contact</h1>
+            <p>📞 +91 8439310853</p>
+            <p>📧 akashtyagi3003@gmail.com</p>
+            <p>📍 Muzaffarnagar</p>
+
+            <h1 style="margin-top:20px;">Skills</h1>
+            <p>HTML • CSS • MySQL • Python</p>
+
+            <h1 style="margin-top:20px;">Languages</h1>
             <p>English</p>
-            <br>
-            <img src="period.png" style="width: 50px; height: 50px; margin-left: 90px; float: left;"  alt="">
             <p>Hindi</p>
         </div>
+
         <div class="a5">
-            <h1 style="margin-left: 100px; padding-top: 20px;">About me</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;" alt="">
-            <p style="margin-left: 100px;">Have a good experience with computers, programs and coding from childhood.
-                <br> last 1 years working at home on different web-projects
+            <h1>About Me</h1>
+            <p>
+                Have good experience with computers and coding from childhood.
+                Working on web and Python projects for the last 1 year.
             </p>
-            <h1 style="margin-left: 100px; padding-top: 20px;">Education</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;;" alt=""> <br>
-            <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left;" alt="">
-            <p>Bachelor of Computer Applications</p>
-            <p style="float: left;">Maa Shakumbhari University <p style="float: left; margin-left: 100px;">2022-2026</p></p>
-            <br>
-            <h1 style="margin-left: 100px; padding-top: 20px;">Experience</h1>
-            <img src="minus.png" style="width: 300px; height: 20px; margin-left: 100px;;" alt=""> <br>
-            <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left;" alt="">
-            <p>Web Developer Intern</p>
-            <p style="float: left;">Mera Shiksha Shayak <p style="float: left; margin-left: 100px;">2025 - 2026</p></p>
 
+            <h1 style="margin-top:20px;">Education</h1>
+            <p><strong>BCA</strong> – Maa Shakumbhari University (2022–2026)</p>
+
+            <h1 style="margin-top:20px;">Experience</h1>
+            <p><strong>Web Developer Intern</strong></p>
+            <p>Mera Shiksha Shayak (2025–2026)</p>
         </div>
+
     </div>
+
+    <!-- ===== Projects ===== -->
     <div class="a6">
-        <h1 style="text-align: center;">Projects</h1>
-        <div class="a7">
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Report-Card-Generator</h3>
-          <p style="margin-left: 140px;">This Python program is used to create a student marksheet similar to a CBSE board result. It takes student details, subject marks, calculates total marks, percentage, grades, and pass/fail status, and then displays the marksheet.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Report-Card-Generator-"> click here to see the code</a></p>
-          <br>
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Tour-and-Travels</h3>
-          <p style="margin-left: 140px;">This is a Tour and Travels Management System in Python that uses OOP concepts, login authentication, menu-driven programming, and billing functionality.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Tour-and-Travels"> click here to see the code</a></p>
-          <br>
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Top-Do-List</h3>
-          <p style="margin-left: 140px;">This Python program is a menu-driven To-Do List application that allows a user to manage daily tasks. It uses Object-Oriented Programming (OOP) concepts and a dictionary to store tasks and their status.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Top-Do-List"> click here to see the code</a></p>
-          <br>
-        
-        </div>
-        <div class="a8">
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Bill-Generator</h3>
-          <p style="margin-left: 140px;">This Python program is used to generate a invoice (bill). It takes customer details and three product details, calculates the total cost, and prints a formatted bill.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Bill-Generator"> click here to see the code</a></p>
-          <br>
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Bank-Management-System</h3>
-          <p style="margin-left: 140px;">This code is a menu-driven Bank Management System created using Object-Oriented Programming (OOP) in Python. It allows a user to perform basic banking operations such as opening an account, depositing money, withdrawing money, and checking balance.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Bank-Management-System"> click here to see the code</a></p>
-          <br>
-          <img src="period.png"  style="width: 50px; height: 50px; margin-left: 90px; float: left; margin-top: 5px;" alt="">
-          <h3>Student-Information</h3>
-          <p style="margin-left: 140px;">This Python program attempts to create a student management system using a class named student. It allows the user to: Add student data Read student data Update student data Delete student data The program interacts with the user through text input in a loop until the user chooses to delete the data and exit.</p>
-          <p style="margin-left: 140px;"><a href="https://github.com/tyagiaakash2004/Student-Information"> click here to see the code</a></p>
-        </div>
+        <h1 style="margin-left: 550px;">Projects</h1>
 
+        <div class="projects">
+
+            <div class="a7">
+                <h3>Report-Card-Generator</h3>
+                <p>Python program to generate a CBSE-style marksheet.</p>
+                <a href="https://github.com/tyagiaakash2004/Report-Card-Generator-">View Code</a>
+            </div>
+
+            <div class="a8">
+                <h3>Tour-and-Travels</h3>
+                <p>Python-based Tour & Travels Management System using OOP.</p>
+                <a href="https://github.com/tyagiaakash2004/Tour-and-Travels">View Code</a>
+            </div>
+
+            <div class="a7">
+                <h3>To-Do-List</h3>
+                <p>Menu-driven Python To-Do List using OOP.</p>
+                <a href="https://github.com/tyagiaakash2004/Top-Do-List">View Code</a>
+            </div>
+
+            <div class="a8">
+                <h3>Bank-Management-System</h3>
+                <p>Banking system with deposit, withdraw & balance features.</p>
+                <a href="https://github.com/tyagiaakash2004/Bank-Management-System">View Code</a>
+            </div>
+
+        </div>
     </div>
+
 </body>
 </html>
