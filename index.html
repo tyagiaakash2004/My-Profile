@@ -1,218 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aakash Tyagi – Resume</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        body{
-            width:100%;
-        }
-
-        /* ===== Header ===== */
-        .a1{
-            display:flex;
-            flex-wrap:wrap;
-            align-items:center;
-            justify-content:center;
-            background:#2c3e50;
-            padding:30px 20px;
-        }
-
-        .a2 img{
-            max-width:50%;
-            height:auto;
-            border-radius:10px;
-        }
-
-        .header-text{
-            color:white;
-            text-align:center; 
-            margin-right:300px;
-        }
-
-        .header-text h1{
-            font-size:70px;
-        }
-
-        .header-text h3{
-            font-size:24px;
-            letter-spacing:2px;
-        }
-
-        /* ===== Main Section ===== */
-        .a3{
-            display:flex;
-            flex-wrap:wrap;
-        }
-
-        .a4,.a5{
-            width:50%;
-            padding:30px;
-        }
-
-        /* .a4{
-            /* background:#ecf0f1; */
-        
-
-        /* ===== Titles ===== */
-        h1{
-            margin-bottom:10px;
-        }
-
-        /* ===== Lists ===== */
-        .item{
-            display:flex;
-            align-items:center;
-            margin-bottom:10px;
-        }
-
-        .item img{
-            width:40px;
-            height:40px;
-            margin-right:10px;
-        }
-
-        /* ===== Projects ===== */
-        .a6{
-            padding:30px;
-        }
-
-        .projects{
-            display:flex;
-            flex-wrap:wrap;
-        }
-
-        .a7,.a8{
-            width:50%;
-            padding:15px;
-        }
-
-        a{
-            color:#2980b9;
-            text-decoration:none;
-        }
-
-        a:hover{
-            text-decoration:underline;
-        }
-
-        /* ===== Responsive ===== */
-        @media(max-width:768px){
-            .header-text h1{
-                font-size:40px;
-            }
-
-            .a4,.a5,
-            .a7,.a8{
-                width:100%;
-            }
-
-            .header-text{
-                margin-left:0;
-                margin-top:20px;
-            }
-        }
-
-        @media(max-width:480px){
-            .header-text h1{
-                font-size:32px;
-            }
-
-            p{
-                font-size:14px;
-            }
-        }
-    </style>
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <!-- ===== Header ===== -->
-    <div class="a1">
-        <div class="a2">
-            <img src="Picture1.png" alt="">
-        </div>
-        <div class="header-text">
-            <h1>Aakash<br>Tyagi</h1>
-            <h3>WEB DEVELOPER</h3>
-        </div>
-    </div>
+  <!-- Header -->
+  <section class="bg-slate-700 text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6">
+      
+      <img src="Picture1.png" style="height: 200px;" alt="Profile"
+        
 
-    <!-- ===== Info Section ===== -->
-    <div class="a3">
-
-        <div class="a4">
-            <h1>Contact</h1>
-            <p>📞 +91 8439310853</p>
-            <p>📧 akashtyagi3003@gmail.com</p>
-            <p>📍 Muzaffarnagar</p>
-
-            <h1 style="margin-top:20px;">Skills</h1>
-            <p>HTML • CSS • MySQL • Python</p>
-
-            <h1 style="margin-top:20px;">Languages</h1>
-            <p>English</p>
-            <p>Hindi</p>
-        </div>
-
-        <div class="a5">
-            <h1>About Me</h1>
-            <p>
-                Have good experience with computers and coding from childhood.
-                Working on web and Python projects for the last 1 year.
-            </p>
-
-            <h1 style="margin-top:20px;">Education</h1>
-            <p><strong>BCA</strong> – Maa Shakumbhari University (2022–2026)</p>
-
-            <h1 style="margin-top:20px;">Experience</h1>
-            <p><strong>Web Developer Intern</strong></p>
-            <p>Mera Shiksha Shayak (2025–2026)</p>
-        </div>
+      <div class="text-center md:text-left">
+        <h1 class="text-4xl md:text-6xl font-bold">Aakash Tyagi</h1>
+        <p class="text-xl mt-2">WEB DEVELOPER</p>
+      </div>
 
     </div>
+  </section>
 
-    <!-- ===== Projects ===== -->
-    <div class="a6">
-        <h1 style="margin-left: 550px;">Projects</h1>
+  <!-- Main Content -->
+  <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-6 bg-white">
 
-        <div class="projects">
+    <!-- Left Column -->
+    <div class="space-y-8">
 
-            <div class="a7">
-                <h3>Report-Card-Generator</h3>
-                <p>Python program to generate a CBSE-style marksheet.</p>
-                <a href="https://github.com/tyagiaakash2004/Report-Card-Generator-">View Code</a>
-            </div>
+      <!-- Contact -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Contact</h2>
+        <p>📞 +91 8439310853</p>
+        <p>✉️ akashtyagi3003@gmail.com</p>
+        <p>📍 Muzaffarnagar</p>
+      </div>
 
-            <div class="a8">
-                <h3>Tour-and-Travels</h3>
-                <p>Python-based Tour & Travels Management System using OOP.</p>
-                <a href="https://github.com/tyagiaakash2004/Tour-and-Travels">View Code</a>
-            </div>
+      <!-- Skills -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Skills</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>MySQL</li>
+          <li>Python</li>
+        </ul>
+      </div>
 
-            <div class="a7">
-                <h3>To-Do-List</h3>
-                <p>Menu-driven Python To-Do List using OOP.</p>
-                <a href="https://github.com/tyagiaakash2004/Top-Do-List">View Code</a>
-            </div>
+      <!-- Languages -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Languages</h2>
+        <ul class="list-disc list-inside">
+          <li>English</li>
+          <li>Hindi</li>
+        </ul>
+      </div>
 
-            <div class="a8">
-                <h3>Bank-Management-System</h3>
-                <p>Banking system with deposit, withdraw & balance features.</p>
-                <a href="https://github.com/tyagiaakash2004/Bank-Management-System">View Code</a>
-            </div>
-
-        </div>
     </div>
+
+    <!-- Right Column -->
+    <div class="space-y-8">
+
+      <!-- About -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">About Me</h2>
+        <p>
+          Have good experience with computers and programming from childhood.
+          Last 1 year working on different web projects from home.
+        </p>
+      </div>
+
+      <!-- Education -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Education</h2>
+        <p class="font-semibold">Bachelor of Computer Applications</p>
+        <p>Maa Shakumbhari University</p>
+        <p class="text-sm text-gray-600">2022 – 2026</p>
+      </div>
+
+      <!-- Experience -->
+      <div>
+        <h2 class="text-2xl font-bold mb-2">Experience</h2>
+        <p class="font-semibold">Web Developer Intern</p>
+        <p>Mera Shiksha Shayak</p>
+        <p class="text-sm text-gray-600">2025 – 2026</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section class="max-w-6xl mx-auto p-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Project Card -->
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">Report Card Generator</h3>
+        <p class="mt-2 text-sm">
+          Python program to generate CBSE-style marksheets with grades,
+          percentage, and result.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Report-Card-Generator-"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">Tour and Travels</h3>
+        <p class="mt-2 text-sm">
+          Tour & Travels Management System using Python OOP,
+          login authentication, and billing.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Tour-and-Travels"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">To-Do List</h3>
+        <p class="mt-2 text-sm">
+          Menu-driven To-Do List application using Python OOP and dictionary.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Top-Do-List"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">Bank Management System</h3>
+        <p class="mt-2 text-sm">
+          OOP-based banking system with deposit, withdraw, and balance check.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Bank-Management-System"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">Student Information</h3>
+        <p class="mt-2 text-sm">
+         This Python program attempts to create a student management system using a class named student.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Student-Information"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+      <div class="bg-white p-5 rounded shadow">
+        <h3 class="text-xl font-bold">Bill-Generator</h3>
+        <p class="mt-2 text-sm">
+This Python program is used to generate a invoice (bill). It takes customer details and three product details, calculates the total cost, and prints a formatted bill.
+        </p>
+        <a href="https://github.com/tyagiaakash2004/Bill-Generator"
+           class="text-blue-600 underline text-sm mt-2 inline-block">
+          View Code
+        </a>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
+
+
